@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/events.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img\kaltarang-white-nobg.png" sizes="32x32">
+    <script>
+        // Create a new Image object to preload the page
+        var preloadedPage = new Image();
+        preloadedPage.src = 'landing.html';
+    </script>
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QPNWJ63XYC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QPNWJ63XYC');
+</script>
+
+<body style="background-color: black; color: white; max-width: 960px; margin: auto">
+
+    <div class="header-wrapper-main">
+        <div id="logo">
+            KALTARANG '24
+            <p class="sub-heading" style="font-size: 24px;font-family: 'Cedarville Cursive', cursive;">Relive the past</p>
+        </div>
+    
+        <nav role="navigation">
+            <div id="menuToggle">
+              <input type="checkbox" />
+                <span style="background-color: white;"></span>
+                <span style="background-color: white;"></span>
+                <span style="background-color: white;"></span>
+              <ul id="menu">
+                <a  href="landing.html"><li class="active">Home</li></a>
+                <a href="events.html"><li>Events</li></a>
+                <a href="ca_program.html"><li>CA Program</li></a>
+                <a href="sponsers.html"><li>Sponsors</li></a>
+                <a href="accomodationandfacilities.html"><li>Accomodation & Facilities</li></a>
+                <a href="contact.html"><li>Contact Us</li></a>
+              </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div style="margin: 10% 20px 10% 20px;">
+        <div class="header">
+            <div class="header-wrapper">
+                <div class="title projectheadline"></div>
+            </div>
+        </div>
+        <div class="modal-content-wrapper">
+            <video src="videos\kaltarang.mp4" autoplay loop muted></video>
+            <h1 class="modal-subtitle">About Kaltarang</h1>
+            <p>Kaltarang, the lively cultural event at Rajiv Gandhi Institute of Petroleum Technology, shines bright with students' creative spirit.
+                It's a showcase of their hard work, captivating everyone with its beauty and sparking curiosity.
+                This yearly fest brings people together through various art forms, nurturing future cultural leaders.
+                With careful planning, students collaborate, refining their talents and leadership skills.
+                With each passing year, Kaltarang has etched its legacy, hosting renowned artists like Gajendra Verma, Aditya Narain, and Nikhil D'Souza, whose magical performances leave the audience spellbound.    
+                Kaltarang is a symbol of cultural greatness, inspiring all to embrace the power of art.</p>
+        </div>
+        <div class="modal-content-wrapper">
+            <img src="/img/rgipt.webp" alt="">
+            <h1 class="modal-subtitle">About RGIPT</h1>
+            <p> Rajiv Gandhi Institute of Petroleum Technology (RGIPT) is a premier
+                scientific and management training, educational, and research
+                institution established by the Government of India in 2008. The Institute
+                has been accorded the status of "An Institution of National Importance"
+                along the lines of IIT under an act of Parliament (Rajiv Gandhi Institute
+                of Petroleum Technology Act 2007).
+                The horizons of this institute stretch from the Energy to the IT sector
+                making it one of the best institutes this country has seen. RGIPT aims to
+                provide excellence in education with character building to all the budding
+                enthusiasts in and out of the institute
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KALTARANG '24</title>
+    <!-- <meta property="og:title" content="Joshua's World"/>
+    <meta property="og:image" content="img/joshuasworld_thumbnail.jpg"/>
+    <meta property="og:description" content="Portfolio Joshua von Hofen"/>
+    <meta property="og:url" content="joshuas.world"/> -->
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="627" />
+    <meta property="og:type" content="website"/>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" href="img\kaltarang-white-nobg.png" sizes="32x32">
+    <script type="module" src="js/3D.js"></script>
+    <script>
+        // Create a new Image object to preload the page
+        var preloadedPage = new Image();
+        preloadedPage.src = 'landing.html';
+    </script>
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QPNWJ63XYC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QPNWJ63XYC');
+</script>
+
+<body>
+    <!-- <div id="loadingscreen">  
+        <div id="loader-wrapper">
+            <div class="title"><span class="title-span">Welcome to</span><span class="title-span-sub-heading">KALTARANG '24</span></div>
+            <h1 style="text-align: right;"><span>Kaltarang is the lively cultural event at Rajiv Gandhi Institute of Petroleum Technology.<span style="font-size: 28px;"> Rediscover the magic of yesteryears with a nostalgic punch.</span></span></h1>
+            <div id="progress">
+                <span id="loading">Loading...</span>
+                <div id="progress-bar"></div>
+            </div>
+            <button class="button cta" id="start-button" href="#start" style="display: none;">Enter into the reality<i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div> -->
+
+    <div class="header-wrapper-main" style="backdrop-filter: blur(0px);">
+    <div id="logo">
+        KALTARANG '24
+        <p class="sub-heading" style="font-size: 24px;font-family: 'Cedarville Cursive', cursive;">12 - 14th April 2024</p>
+    </div>
+
+    <nav role="navigation">
+        <div id="menuToggle" style="right: 20px;">
+          <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+          <ul id="menu">
+            <a  href="landing.html"><li class="active">Home</li></a>
+            <a href="events.html"><li>Events</li></a>
+            <a href="ca_program.html"><li>CA Program</li></a>
+            <a href="sponsers.html"><li>Sponsors</li></a>
+            <a href="contact.html"><li>Accomodation & Facilities</li></a>
+            <a href="contact.html"><li>Contact Us</li></a>
+          </ul>
+        </div>
+    </nav>
+    </div>
+
+    <label class="button-round" id="switch">
+        <input id="myCheckbox" type="checkbox" checked>
+        <i id="moon"class="icon fa fa-moon fa-xl"></i>
+        <i id="sun" class="icon fa fa-lightbulb fa-xl"></i>
+    </label>
+      
+
+    <canvas class="webgl"></canvas>
+
+    <div class="sign" id="instructions">
+        <div id="animation"></div>
+        <div class="helptext"><span class="helptext">Drag to explore</span></div>
+    </div>
+
+    <!-- Events -->
+
+    <div class="popup project hidden">
+        <div class="content">
+            <img src="img\events.gif" class="thumbnail">
+            <div class="text">
+                <h2 class="projecttitle">EVENTS</h2>
+                <p class="subtitle">Register in 20+ events at Kaltarang '24</p>
+            </div>
+        </div>
+        <button class="button" onclick="window.location.href = 'events.html'">REGISTER <i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+
+    <div class="popup sign hidden">
+        <!-- <p2>After graduating, I started working as a motion designer.</p2> -->
+    </div>
+
+    <!-- Teaser -->
+
+
+    <div class="popup project hidden">
+        <div class="content">
+            <img src="img/teaser.gif" class="thumbnail">
+            <div class="text">
+                <h2 class="projecttitle">TEASER</h2>
+                <p class="subtitle">Watch the latest reveal of Kaltarang '24</p>
+            </div>
+        </div>
+        <button class="button" onclick="window.location.href = 'teaser.html'">View Teaser <i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+
+    <div class="popup sign hidden">
+        <!-- <p2>After graduating, I started working as a motion designer.</p2> -->
+    </div>
+
+    <!-- about kaltarang -->
+
+    <div class="popup project hidden">
+        <div class="content">
+            <img src="img\kaltarang-white-nobg.png" class="thumbnail">
+            <div class="text">
+                <h2 class="projecttitle">ABOUT KALTARANG</h2>
+                <p class="subtitle">The grand annual cultural fest of RGIPT.</p>
+            </div>
+        </div>
+        <button class="button" onclick="window.location.href = 'aboutus.html'">Know more about us <i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+
+    <div class="popup sign hidden">
+        <!-- <p2>After graduating, I started working as a motion designer.</p2> -->
+    </div>
+
+    <!-- Past Personalities -->
+
+    <div class="popup project hidden">
+        <div class="content">
+            <img src="img\faq.gif" class="thumbnail">
+            <div class="text">
+                <h2 class="projecttitle">FAQs</h2>
+                <p class="subtitle">Let's see some of the frequently asked questions about Kaltarang</p>
+            </div>
+        </div>
+        <button class="button" onclick="windoow.locatio.href = 'faqs.html'">FAQs <i class="fa-solid fa-arrow-right"></i></button>
+
+    </div>
+
+    <div class="popup sign hidden">
+        <!-- <p2>I moved to Norway for my Master studies.</p2> -->
+    </div> 
+
+    <!-- gallery -->
+
+    <div class="popup project hidden">
+        <div class="content">
+            <img src="img/gallery.gif" class="thumbnail">
+            <div class="text">
+                <h2 class="projecttitle">GALLERY</h2>
+                <p class="subtitle">Kaltarang is filled with plathora of amazing events. Let's have a look!</p>
+            </div>
+        </div>
+        <button class="button" onclick="window.location.href = 'gallery.html'">Glimpses of Kaltarang <i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+
+    <div class="popup sign hidden">
+        <!-- <p2>After graduating, I started working as a motion designer.</p2> -->
+    </div>
+
+    <!-- Connect to us -->
+
+    <div class="popup project hidden">
+        <div class="content">
+            <img src="img\followus.gif" class="thumbnail">
+            <div class="text">
+                <h2 class="projecttitle">FOLLOW US ON</h2>
+            </div>
+        </div>
+        <div class="social" style="background-color: white;border-radius: 99px;display: flex;justify-content: space-evenly;">
+          <a href="https://www.instagram.com/kaltarang_rgipt?igsh=aDh6czkydHQ1dW1s" class="social-icon-anchor"><i class="fa-brands fa-square-instagram social-icon"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=61556959584257&mibextid=ZbWKwL" class="social-icon-anchor"><i class="fa-brands fa-facebook social-icon"></i></a>
+          <a href="" class="social-icon-anchor"><i class="fa-brands fa-square-x-twitter social-icon"></i></a>
+          <a href="https://youtube.com/@kaltarang6654?si=DfWxP4FWhEJ_y5K7" class="social-icon-anchor"><i class="fa-brands fa-youtube social-icon"></i></a>
+        </div>
+
+    </div>
+
+
+<script src="js/buttons.js"></script>
+
+
+</body>
+</html>

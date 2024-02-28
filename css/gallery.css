@@ -1,0 +1,54 @@
+body{
+    background-color: black;
+    color: white;
+}
+.sponsors{
+    text-align: center;
+    font-size: 90px;
+    margin: 150px 0 100px 0;
+}
+.outer-gallery-div{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.gallery-track {
+    position: fixed;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 0.25rem;
+    padding: 0.25rem;
+    will-change: transform;
+}
+
+.card {
+    height: 400px;
+    overflow: hidden;
+
+    & .card-image-wrapper {
+        height: 135%;
+        will-change: transform;
+
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+.card-image-wrapper img:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+}
+  
+@media (width < 800px) {
+    .gallery-track {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (width < 550px) {
+    .gallery-track {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
