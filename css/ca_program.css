@@ -1,1 +1,94 @@
-.ca-heading{margin-top:150px;font-size:100px;text-align:center}.ca-sub-heading{font-size:30px;text-align:center;margin-top:100px}.ca-sub-sub-heading{font-size:60px;text-align:center;color:#fff}.column-div{width:80%;margin:100px auto 0 auto;display:flex;flex-direction:column;justify-content:space-between;align-items:center;gap:100px}.row-div{width:80%;margin:auto auto;display:flex;flex-direction:row;justify-content:center;align-items:center;gap:100px}.sp-heading{text-align:center;background:linear-gradient(to bottom,rgba(255,255,255,.1) 0%,rgba(255,255,255,.1) 100%);backdrop-filter:blur(10px);padding:20px;border-radius:10px}.sp-sub-heading{text-align:center;font-size:30px}@media screen and (max-width:768px){.ca-heading{font-size:45px}.ca-sub-heading{font-size:20px}.ca-sub-sub-heading{font-size:30px}.column-div{width:100%;margin:50px auto 0 auto;gap:50px}.row-div{flex-direction:column}.sp-heading{font-size:15px}.sp-sub-heading{font-size:30px}}
+.campus-ambassador-img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: brightness(25%);
+    object-fit: contain;
+}
+.ca-heading {
+    margin-top: 150px;
+    font-size: 100px;
+    text-align: center;
+}
+.ca-sub-heading {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 50px;
+}
+.ca-sub-sub-heading {
+    font-size: 60px;
+    text-align: center;
+    color: #fff;
+}
+.column-div {
+    width: 80%;
+    margin: 100px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+.row-div {
+    width: 80%;
+    margin: auto auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.sp-heading {
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 10px;
+}
+.sp-sub-heading {
+    text-align: center;
+    font-size: 30px;
+}
+
+
+@media screen and (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
+    .campus-ambassador-img{
+        position: absolute;
+        z-index: -1;
+        object-fit: contain;
+        border-radius: 8px;
+        filter: brightness(25%);
+        margin-top: 5vh;
+    }
+    .ca-heading {
+        font-size: 45px;
+    }
+    .ca-sub-heading {
+        font-size: 20px;
+    }
+    .ca-sub-sub-heading {
+        font-size: 30px;
+    }
+    .column-div {
+        width: 100%;
+        margin: 50px auto 0 auto;
+        gap: 50px;
+    }
+    .row-div {
+        flex-direction: column;
+    }
+    .sp-heading {
+        font-size: 15px;
+    }
+    .sp-sub-heading {
+        font-size: 30px;
+    }
+}
