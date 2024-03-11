@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" type="image/png" href="img\kaltarang-white-nobg.png" sizes="32x32">
     <script>
@@ -20,6 +21,15 @@
         var preloadedPage = new Image();
         preloadedPage.src = 'landing.html';
     </script>
+    <!-- <style>
+        body{
+            background-color: #280c3c;
+            opacity: 1;
+            background-image:  radial-gradient(#fff 0.5px, transparent 0.5px), radial-gradient(#fff 0.5px, #280c3c 0.5px);
+            background-size: 20px 20px;
+            background-position: 0 0,10px 10px;
+        }
+    </style> -->
 </head>
 
 <!-- Google tag (gtag.js) -->
@@ -32,12 +42,12 @@
   gtag('config', 'G-QPNWJ63XYC');
 </script>
 
-<body style="background-color: black; color: white;">
-    <div style="max-width: 960px; margin: auto;">
+<body style="background-color: #1e0036;color: white;">
+    <div>
         <div class="header-wrapper-main">
             <div id="logo">
                 KALTARANG '24
-                <p class="sub-heading" style="font-size: 24px;font-family: 'Cedarville Cursive', cursive;">A Nostalgic Rewind</p>
+                <p class="sub-heading" style="font-size: 24px;font-family: 'Dancing Script', cursive;">A Nostalgic Rewind</p>
             </div>
         
             <nav role="navigation">
@@ -57,16 +67,19 @@
                 </div>
             </nav>
         </div>
-
-        <div style="margin: 10% 20px 10% 20px;">
-            <div class="inner-div">
-                <img src="img\kaltarang-white-nobg.png" alt="" class="event-logo">
-                <div class="inner-div-div">
-                    <h1 class="heading">KALTARANG</h1>
-                    <p class="event-description">Events and Competitions</p>
-                    <p class="date-time">12 - 14th April 2024</p>
-                </div>
+        
+        <div class="inner-div">
+            <img src="img\golden-kaltarang.png" alt="" class="event-logo">
+            <div class="inner-div-div">
+                <h1 class="heading">KALTARANG</h1>
+                <p class="event-description">Events and Competitions</p>
+                <p class="date-time">12 - 14th April 2024</p>
             </div>
+        </div>
+        <div id="scroll-down-suggestion">
+            SCROLL DOWN TO VIEW EVENTS AND COMPETITIONS
+        </div>
+        <div style="margin: 10% 20px 10% 20px;max-width: 960px;margin: auto;">
             <div class="event-div">
                 <div class="inner-event-div">
                     <table class="event-table">
@@ -81,9 +94,9 @@
                     To be revealed soon...
                 </div>
                 <div id="competitions" style="display: none;">
-                    <div style="text-align: center;width: 100%;color: red;margin-top: 20px;font-size: 16px;">
+                    <!-- <div style="text-align: center;width: 100%;color: red;margin-top: 20px;font-size: 16px;">
                         * You are viewing a dynamically updateable webpage, links may not work, Events, Competitions and Rules mentioned on this page are subject to change. Please keep visiting this page for the latest updates or contact us for more information and offline registration.
-                    </div>
+                    </div> -->
                     <select name="event-type" id="event-type" class="event-type-select">
                         <option value="nill">Choose an event type</option>
                         <option value="Khayaal">Khayaal (Music)</option>
@@ -91,42 +104,42 @@
                         <option value="Fab-Fiesta">Fab Fiesta (Dance)</option>
                         <option value="Drishya">Drishya (Cinematography)</option>
                         <option value="Vichaar-Vivaad">Vichaar Vivaad (Debate)</option>
-                        <option value="Pratibimb">Pratibimb (Portray Writing)</option>
                         <option value="Ensemble-Elysium">Ensemble Elysium (Fashion Show)</option>
+                        <option value="Awadh-Alankar">Awadh Alankar (Poetry Writing)</option>
                         <option value="Palette-Pantomime">Palette Pantomime (Live Painting)</option>
                     </select>
                     <div id="Khayaal" style="display: none;">
                         <div class="event-type-description">
-                            Khayaal is our music event. The name is inspired from the semi-classical music genre of Awadh known as Khayaal. It includes competitions to involve every aspect of music from Singing, Instrumentals to Rap competitions.
+                            <img src="Events_Cards\Khayaal.png" alt="" class="event-description-card">
                         </div>
                         <div class="master-div">
                             <div class="event-card-div">
                                 <div class="event-card">
                                     <div class="inner-event-card">
-                                        <img alt="" class="event-image">
+                                        <img alt="" class="event-image" src="Events_Cards\solo singing.png">
                                         <div class="event-card-heading">SANGEET SAARANG</div>
                                         <div class="event-card-description">SOLO SINGING COMPETITION</div>
                                         <div class="event-card-links">
                                             <div class="rulebook-description">
-                                                <a href="" class="button">READ MORE</a>
+                                                <a class="button" onclick="downloadFile('sangeet-saarang')">RULEBOOK</a>
                                             </div>
                                             <div class="register-link">
-                                                <a href="" class="button">REGISTER</a>
+                                                <a href="https://unstop.com/p/sangeet-saarang-rajiv-gandhi-institute-of-petroleum-technology-jais-amethi-rgipt-926738" class="button">REGISTER</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="event-card">
                                     <div class="inner-event-card">
-                                        <img alt="" class="event-image">
+                                        <img alt="" src="Events_Cards\group singing.jpeg" class="event-image">
                                         <div class="event-card-heading">SUR SANGAM</div>
                                         <div class="event-card-description">GROUP MUSIC COMPETITION</div>
                                         <div class="event-card-links">
                                             <div class="rulebook-description">
-                                                <a href="" class="button">READ MORE</a>
+                                                <a class="button" onclick="downloadFile('sur-sangam')">RULEBOOK</a>
                                             </div>
                                             <div class="register-link">
-                                                <a href="" class="button">REGISTER</a>
+                                                <a href="https://unstop.com/p/sur-sangam-kaltarang-rajiv-gandhi-institute-of-petroleum-technology-jais-amethi-rgipt-926816" class="button">REGISTER</a>
                                             </div>
                                         </div>
                                     </div>
@@ -135,30 +148,30 @@
                             <div class="event-card-div">
                                 <div class="event-card">
                                     <div class="inner-event-card">
-                                        <img alt="" class="event-image">
-                                        <div class="event-card-heading">SUR SAGAR</div>
+                                        <img alt="" src="Events_Cards\classical singing.jpg" class="event-image">
+                                        <div class="event-card-heading">SUR SAAGAR</div>
                                         <div class="event-card-description">CLASSICAL SINGING COMPETITION</div>
                                         <div class="event-card-links">
                                             <div class="rulebook-description">
-                                                <a href="" class="button">READ MORE</a>
+                                                <a class="button" onclick="downloadFile('sur-saagar')">RULEBOOK</a>
                                             </div>
                                             <div class="register-link">
-                                                <a href="" class="button">REGISTER</a>
+                                                <a href="https://unstop.com/o/kDhVQ6B?lb=ie1se2HB" class="button">REGISTER</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="event-card">
                                     <div class="inner-event-card">
-                                        <img alt="" class="event-image">
+                                        <img alt="" src="Events_Cards\Instrumental.jpg" class="event-image">
                                         <div class="event-card-heading">VADYA VRINDA</div>
                                         <div class="event-card-description">INSTRUMENTAL COMPETITION</div>
                                         <div class="event-card-links">
                                             <div class="rulebook-description">
-                                                <a href="" class="button">READ MORE</a>
+                                                <a class="button" onclick="downloadFile('vadya-vrinda')">RULEBOOK</a>
                                             </div>
                                             <div class="register-link">
-                                                <a href="" class="button">REGISTER</a>
+                                                <a href="https://unstop.com/o/DBRe0yz?lb=ie1se2HB" class="button">REGISTER</a>
                                             </div>
                                         </div>
                                     </div>
@@ -167,15 +180,15 @@
                             <div class="event-card-div odd-event-card-div">
                                 <div class="event-card">
                                     <div class="inner-event-card">
-                                        <img alt="" class="event-image">
-                                        <div class="event-card-heading">RHYME RANDEZVOUS</div>
+                                        <img alt="" src="Events_Cards\rap battle.jpeg" class="event-image">
+                                        <div class="event-card-heading">SPIT INK</div>
                                         <div class="event-card-description">RAP BATTLE</div>
                                         <div class="event-card-links">
                                             <div class="rulebook-description">
-                                                <a href="" class="button">READ MORE</a>
+                                                <a class="button" onclick="downloadFile('spit-bar')">RULEBOOK</a>
                                             </div>
                                             <div class="register-link">
-                                                <a href="" class="button">REGISTER</a>
+                                                <a href="https://unstop.com/o/TwkrKR2?lb=ie1se2HB" class="button">REGISTER</a>
                                             </div>
                                         </div>
                                     </div>
@@ -185,53 +198,36 @@
                     </div>
                     <div id="Swaang" style="display: none;">
                         <div class="event-type-description">
-                            Swaang will consist of drama events where drama and theatre artists will get an opportunity to compete and hone their skills. It will be a great experience for the drama enthusiast audience. In this series of events the drama enthusiasts from across the institutes will show case their acts and will bring lives to fictional characters.
+                            <img src="Events_Cards\Swaang.png" alt="" class="event-description-card">
                         </div>
                         <div class="master-div">
                             <div class="event-card-div">
                                 <div class="event-card">
                                     <div class="inner-event-card">
-                                        <img alt="" class="event-image">
+                                        <img alt="" src="Events_Cards\stageplays.jpg" class="event-image">
                                         <div class="event-card-heading">KALPANA KAARVAN</div>
                                         <div class="event-card-description">STAGE PLAY DRAMA</div>
                                         <div class="event-card-links">
                                             <div class="rulebook-description">
-                                                <a href="" class="button">READ MORE</a>
+                                                <a class="button" onclick="downloadFile('kalpana-kaarvan')">RULEBOOK</a>
                                             </div>
                                             <div class="register-link">
-                                                <a href="" class="button">REGISTER</a>
+                                                <a href="https://unstop.com/o/qu7imjk?lb=ie1se2HB" class="button">REGISTER</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="event-card">
                                     <div class="inner-event-card">
-                                        <img alt="" class="event-image">
+                                        <img alt="" src="Events_Cards\Nukkad Natak.jpeg" class="event-image">
                                         <div class="event-card-heading">NATYA SANKALP</div>
                                         <div class="event-card-description">NUKKAD NATAK</div>
                                         <div class="event-card-links">
                                             <div class="rulebook-description">
-                                                <a href="" class="button">READ MORE</a>
+                                                <a class="button" onclick="downloadFile('natya-sankalp')">RULEBOOK</a>
                                             </div>
                                             <div class="register-link">
-                                                <a href="" class="button">REGISTER</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="event-card-div odd-event-card-div">
-                                <div class="event-card">
-                                    <div class="inner-event-card">
-                                        <img alt="" class="event-image">
-                                        <div class="event-card-heading">FRAME FUSION</div>
-                                        <div class="event-card-description">SHORT FIM COMPETITION</div>
-                                        <div class="event-card-links">
-                                            <div class="rulebook-description">
-                                                <a href="" class="button">READ MORE</a>
-                                            </div>
-                                            <div class="register-link">
-                                                <a href="" class="button">REGISTER</a>
+                                                <a href="https://unstop.com/o/SzfdyOV?lb=ie1se2HB" class="button">REGISTER</a>
                                             </div>
                                         </div>
                                     </div>
@@ -241,36 +237,36 @@
                     </div>
                     <div id="Fab-Fiesta" style="display: none;">
                         <div class="event-type-description">
-                            The lively energy and mesmerizing acts in "Fab-Fiesta" are sure to amaze viewers. From smooth ballet to lively hip-hop, "Fab-Feista" shows a wide range of dance styles. "Fab-Feista" is a joyful celebration of creation and expression that brings people together through the combination of music, movement, and emotion.
+                            <img src="Events_Cards\Fab Fiesta.png" alt="" class="event-description-card">
                         </div>
                         <div class="master-div">
                             <div class="event-card-div">
                                 <div class="event-card">
                                     <div class="inner-event-card">
-                                        <img alt="" class="event-image">
+                                        <img alt="" src="Events_Cards\solo dance.png" class="event-image">
                                         <div class="event-card-heading">EKA KALAA</div>
                                         <div class="event-card-description">SOLO DANCE COMPETITION</div>
                                         <div class="event-card-links">
                                             <div class="rulebook-description">
-                                                <a href="" class="button">READ MORE</a>
+                                                <a class="button" onclick="downloadFile('eka-kalaa')">RULEBOOK</a>
                                             </div>
                                             <div class="register-link">
-                                                <a href="" class="button">REGISTER</a>
+                                                <a href="https://unstop.com/o/kim4EJ2?lb=ie1se2HB" class="button">REGISTER</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="event-card">
                                     <div class="inner-event-card">
-                                        <img alt="" class="event-image">
+                                        <img alt="" src="Events_Cards\Group dance.jpeg" class="event-image">
                                         <div class="event-card-heading">SYNC & SOAR</div>
                                         <div class="event-card-description">GROUP DANCE COMPETITION</div>
                                         <div class="event-card-links">
                                             <div class="rulebook-description">
-                                                <a href="" class="button">READ MORE</a>
+                                                <a class="button" onclick="downloadFile('sync-and-soar')">RULEBOOK</a>
                                             </div>
                                             <div class="register-link">
-                                                <a href="" class="button">REGISTER</a>
+                                                <a href="https://unstop.com/o/f925Ju3?lb=ie1se2HB" class="button">REGISTER</a>
                                             </div>
                                         </div>
                                     </div>
@@ -279,30 +275,47 @@
                             <div class="event-card-div">
                                 <div class="event-card">
                                     <div class="inner-event-card">
-                                        <img alt="" class="event-image">
-                                        <div class="event-card-heading">NRITYA MANCH</div>
+                                        <img alt="" src="Events_Cards\Classical Dance.jpg" class="event-image">
+                                        <div class="event-card-heading">NRITYANJALI</div>
                                         <div class="event-card-description">CLASSICAL DANCE COMPETITION</div>
                                         <div class="event-card-links">
                                             <div class="rulebook-description">
-                                                <a href="" class="button">READ MORE</a>
+                                                <a class="button" onclick="downloadFile('nrityanjali')">RULEBOOK</a>
                                             </div>
                                             <div class="register-link">
-                                                <a href="" class="button">REGISTER</a>
+                                                <a href="https://unstop.com/o/f925Ju3?lb=ie1se2HB" class="button">REGISTER</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="event-card">
                                     <div class="inner-event-card">
-                                        <img alt="" class="event-image">
+                                        <img alt="" src="Events_Cards\Street Dance.jpg" class="event-image">
                                         <div class="event-card-heading">GROOVE FUSION</div>
                                         <div class="event-card-description">STREET DANCE</div>
                                         <div class="event-card-links">
                                             <div class="rulebook-description">
-                                                <a href="" class="button">READ MORE</a>
+                                                <a class="button" onclick="downloadFile('groove-fusion')">RULEBOOK</a>
                                             </div>
                                             <div class="register-link">
-                                                <a href="" class="button">REGISTER</a>
+                                                <a href="https://unstop.com/o/NMJp1Q0?lb=ie1se2HB" class="button">REGISTER</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="event-card-div odd-event-card-div">
+                                <div class="event-card">
+                                    <div class="inner-event-card">
+                                        <img alt="" src="Events_Cards\duet_dance.jpg" class="event-image">
+                                        <div class="event-card-heading">JUGALBANDI</div>
+                                        <div class="event-card-description">DUET DANCE</div>
+                                        <div class="event-card-links">
+                                            <div class="rulebook-description">
+                                                <a class="button" onclick="downloadFile('jugalbandi')">RULEBOOK</a>
+                                            </div>
+                                            <div class="register-link">
+                                                <a href="https://unstop.com/p/jugalbandi-kaltarang-energy-institute-bangalore-rajiv-gandhi-institute-of-petroleum-technology-rgipt-928876" class="button">REGISTER</a>
                                             </div>
                                         </div>
                                     </div>
@@ -312,36 +325,53 @@
                     </div>
                     <div id="Drishya" style="display: none;">
                         <div class="event-type-description">
-                            "Drishya," where each frame narrates a tale, each scene evokes strong feelings, and each figure captivates your imagination. Through this event, the participants will put forward their vision and stories through frames captured by them.
+                            <img src="Events_Cards\Drishya.png" alt="" class="event-description-card">
                         </div>
                         <div class="master-div">
                             <div class="event-card-div">
                                 <div class="event-card">
                                     <div class="inner-event-card">
-                                        <img alt="" class="event-image">
+                                        <img alt="" src="Events_Cards\Photography.webp" class="event-image">
                                         <div class="event-card-heading">SHUTTER SAGA</div>
                                         <div class="event-card-description">PHOTOGRAPHY COMPETITION</div>
                                         <div class="event-card-links">
                                             <div class="rulebook-description">
-                                                <a href="" class="button">READ MORE</a>
+                                                <a class="button" onclick="downloadFile('shutter-saga')">RULEBOOK</a>
                                             </div>
                                             <div class="register-link">
-                                                <a href="" class="button">REGISTER</a>
+                                                <a href="https://unstop.com/o/wjibNur?lb=ie1se2HB" class="button">REGISTER</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="event-card">
                                     <div class="inner-event-card">
-                                        <img alt="" class="event-image">
+                                        <img alt="" src="Events_Cards\Reel Making.webp" class="event-image">
                                         <div class="event-card-heading">REELCRAFT CHALLENGE</div>
                                         <div class="event-card-description">REEL MAKING COMPETITION</div>
                                         <div class="event-card-links">
                                             <div class="rulebook-description">
-                                                <a href="" class="button">READ MORE</a>
+                                                <a class="button" onclick="downloadFile('reelcraft-challenge')">RULEBOOK</a>
                                             </div>
                                             <div class="register-link">
-                                                <a href="" class="button">REGISTER</a>
+                                                <a href="https://unstop.com/o/w2c7s4o?lb=ie1se2HB" class="button">REGISTER</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="event-card-div odd-event-card-div">
+                                <div class="event-card">
+                                    <div class="inner-event-card">
+                                        <img alt="" src="Events_Cards\Short Film.webp" class="event-image">
+                                        <div class="event-card-heading">FRAME FUSION</div>
+                                        <div class="event-card-description">SHORT FILM COMPETITION</div>
+                                        <div class="event-card-links">
+                                            <div class="rulebook-description">
+                                                <a class="button" onclick="downloadFile('frame-fusion')">RULEBOOK</a>
+                                            </div>
+                                            <div class="register-link">
+                                                <a href="https://unstop.com/o/Syc3x1J?lb=ie1se2HB" class="button">REGISTER</a>
                                             </div>
                                         </div>
                                     </div>
@@ -351,45 +381,21 @@
                     </div>
                     <div id="Vichaar-Vivaad" style="display: none;">
                         <div class="event-type-description">
-                            "Vichar Vivaad" - where ideas clash and minds ignite! It is a dynamic debate competition to foster intellectual discourse and critical thinking.Vichar Vivaad will act as a forum to foster lively discourse and contention on different social issues and philosophical dilemmas. Interchange of ideas and re-evaluation of established view-points will take place through this event.
+                            <img src="Events_Cards\Vichaar-Vivaad.png" alt="" class="event-description-card">
                         </div>
                         <div class="master-div">
                             <div class="event-card-div odd-event-card-div">
                                 <div class="event-card">
                                     <div class="inner-event-card">
-                                        <img alt="" class="event-image">
+                                        <img alt="" src="Events_Cards\debate.jpg" class="event-image">
                                         <div class="event-card-heading">VICHAR VIVAAD</div>
                                         <div class="event-card-description">DEBATE</div>
                                         <div class="event-card-links">
                                             <div class="rulebook-description">
-                                                <a href="" class="button">READ MORE</a>
+                                                <a class="button" onclick="downloadFile('debate')">RULEBOOK</a>
                                             </div>
                                             <div class="register-link">
-                                                <a href="" class="button">REGISTER</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="Pratibimb" style="display: none;">
-                        <div class="event-type-description">
-                            In “Pratimimb” , the participants will be judged based on their creative quotient. This is a ‘Portray Writing’ competitions in which a image, painting or scenary will be displayed to the participants and they will pen their thoughts inspired from the picture.
-                        </div>
-                        <div class="master-div">
-                            <div class="event-card-div odd-event-card-div">
-                                <div class="event-card">
-                                    <div class="inner-event-card">
-                                        <img alt="" class="event-image">
-                                        <div class="event-card-heading">PRATIBIMB</div>
-                                        <div class="event-card-description">PORTRAY WRITING</div>
-                                        <div class="event-card-links">
-                                            <div class="rulebook-description">
-                                                <a href="" class="button">READ MORE</a>
-                                            </div>
-                                            <div class="register-link">
-                                                <a href="" class="button">REGISTER</a>
+                                                <a href="https://unstop.com/o/uXw74I5?lb=ie1se2HB" class="button">REGISTER</a>
                                             </div>
                                         </div>
                                     </div>
@@ -399,21 +405,45 @@
                     </div>
                     <div id="Ensemble-Elysium" style="display: none;">
                         <div class="event-type-description">
-                            Welcome to Ensemble Elysium, where fashion becomes an ethereal journey through style, elegance, and innovation. In this enchanting fashion show, designers and models converge to showcase the latest trends, pushing the boundaries of creativity and redefining the art of dressing. Ensemble Elysium draws its inspiration from two distinct elements: "ensemble" symbolizing the harmonious combination of garments and accessories to create a cohesive look, and "elysium" evoking the idea of a blissful paradise or utopia.
+                            <img src="Events_Cards\Ensemble Elysium.png" alt="" class="event-description-card">
                         </div>
                         <div class="master-div">
                             <div class="event-card-div odd-event-card-div">
                                 <div class="event-card">
                                     <div class="inner-event-card">
-                                        <img alt="" class="event-image">
+                                        <img alt="" src="Events_Cards\fashion_show.webp" class="event-image">
                                         <div class="event-card-heading">ENSEMBLE ELYSIUM</div>
                                         <div class="event-card-description">FASHION SHOW</div>
                                         <div class="event-card-links">
                                             <div class="rulebook-description">
-                                                <a href="" class="button">READ MORE</a>
+                                                <a class="button" onclick="downloadFile('ensemble-elysium')">RULEBOOK</a>
                                             </div>
                                             <div class="register-link">
-                                                <a href="" class="button">REGISTER</a>
+                                                <a href="https://unstop.com/o/OY5fBFd?lb=ie1se2HB" class="button">REGISTER</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Awadh-Alankar" style="display: none;">
+                        <div class="event-type-description">
+                            <img src="Events_Cards\Pratibimb.png" alt="" class="event-description-card">
+                        </div>
+                        <div class="master-div">
+                            <div class="event-card-div odd-event-card-div">
+                                <div class="event-card">
+                                    <div class="inner-event-card">
+                                        <img alt="" src="Events_Cards\poetry.jpg" class="event-image">
+                                        <div class="event-card-heading">AWADH ALANKAR</div>
+                                        <div class="event-card-description">POETRY</div>
+                                        <div class="event-card-links">
+                                            <div class="rulebook-description">
+                                                <a class="button" onclick="downloadFile('awadh-alankar')">RULEBOOK</a>
+                                            </div>
+                                            <div class="register-link">
+                                                <a href="https://unstop.com/o/EGS61Hl?lb=ie1se2HB" class="button">REGISTER</a>
                                             </div>
                                         </div>
                                     </div>
@@ -423,21 +453,21 @@
                     </div>
                     <div id="Palette-Pantomime" style="display: none;">
                         <div class="event-type-description">
-                            Welcome to Palette Pantomime, where the vibrant hues of imagination dance across the canvas in a symphony of creativity. This is a live painting competition in which artists will bring lives to thoughts through their brushes and canvas.In this event the participants will be asked to improvise on spot on a given thought and present their art. This will be a good experience for painting and sketch enthusiasts.
+                            <img src="Events_Cards\Palette Pantomime.png" alt="" class="event-description-card">
                         </div>
                         <div class="master-div">
                             <div class="event-card-div odd-event-card-div">
                                 <div class="event-card">
                                     <div class="inner-event-card">
-                                        <img alt="" class="event-image">
+                                        <img alt="" src="Events_Cards\live_painting.jpg" class="event-image">
                                         <div class="event-card-heading">PALETTE PANTOMIME</div>
                                         <div class="event-card-description">LIVE PAINTING</div>
                                         <div class="event-card-links">
                                             <div class="rulebook-description">
-                                                <a href="" class="button">READ MORE</a>
+                                                <a class="button" onclick="downloadFile('palette-pantomime')">RULEBOOK</a>
                                             </div>
                                             <div class="register-link">
-                                                <a href="" class="button">REGISTER</a>
+                                                <a href="https://unstop.com/o/f7baKJU?lb=ie1se2HB" class="button">REGISTER</a>
                                             </div>
                                         </div>
                                     </div>
@@ -470,6 +500,8 @@
             Copyright &copy; 2024, Kaltarang '24 & Joshuavh All Rights Reserved.
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/events.js"></script>
 </body>
 </html>
