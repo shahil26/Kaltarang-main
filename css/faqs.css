@@ -1,0 +1,10 @@
+html{
+    scroll-behavior: smooth;
+}
+.row-div{
+    font-size:18px;
+}
+.heading{
+    font-size: 60px;
+    text-align: center;
+}

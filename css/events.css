@@ -1,3 +1,28 @@
+:root{
+    background: rgba(12,22,46,255);
+}
+body{
+    scroll-behavior: smooth;
+}
+
+@keyframes heartBeat {
+    0% {
+        transform: scale(1);
+    }
+    7% {
+        transform: scale(1.1);
+    }
+    14% {
+        transform: scale(1);
+    }
+    21% {
+        transform: scale(1.1);
+    }
+    28% {
+        transform: scale(1);
+    }
+}
+
 .event-div{
     width: 100%;
     display: flex;
@@ -11,24 +36,42 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 100%), url(../img/event-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: auto;
+    padding: 150px 0 100px 0;
+}
+.inner-div-div{
+    animation: heartBeat 3s ease-in-out infinite;
 }
 .inner-event-div{
     width: 100%;
 }
 .event-logo{
-    width: 50%;
+    width: 35%;
+}
+.behind-img{
+    width: 200px;
+    height: auto;
+    position: absolute;
+    z-index: -1;
 }
 .heading{
     font-family: "Architects Daughter", cursive;
     font-size: 100px;
+    color: #ecc46c;
 }
 .event-description{
     font-size: 32px;
     text-align: right;
+    color: #ecc46c;
 }
 .date-time{
     font-size: 24px;
     text-align: right;
+    color: #ecc46c;
 }
 .event-table{
     margin-top: 50px;
@@ -39,10 +82,14 @@
 .event-table th{
    padding: 35px;
    border: 2px solid white;
+   box-shadow: inset 0 0 10px #ecc46c;
 }
 .event-table th:hover{
-    background-color: #757BFD;
+    background-color: white;
     cursor: pointer;
+    & a{
+        color: #ecc46c;
+    }
 }
 .event-table th a{
     text-decoration: none;
@@ -76,9 +123,9 @@
     margin: 20px auto;
     text-align: center;
     width: 100%;
-    padding: 40px 0;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+    padding: 10px 0;
+    border-top: 1px solid #ecc46c;
+    border-bottom: 1px solid #ecc46c;
     border-radius: 20px;
 }
 .master-div{
@@ -100,9 +147,10 @@
 .event-card{
     width: 30%;
     padding: 50px;
+    border: 4px solid #ecc46c;
     border-radius: 20px;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
-    color: white;
+    background: linear-gradient(to bottom, rgba(255, 255, 255,0.7) 0%, rgba(255, 255, 255, 0.7) 100%);
+    color: black;
     text-align: center;
     cursor: pointer;
 
@@ -131,9 +179,47 @@
     justify-content: center;
     align-items: center;
 }
-
+.event-description-card{
+    width: 95%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 20px;
+}
+#scroll-down-suggestion{
+    display: block;
+    width: 100%;
+    margin: -100px auto 100px auto;
+    text-align: center;
+}
+.absolute-div{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 67%;
+    height: 600px;
+    border-top: 2px;
+    border-left: 2px;
+    border-right: 2px;
+    border-style: solid;
+    border-color: #ecc46c;
+    border-radius: 20px 20px 0 0;
+    background: black;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 2;
+    animation: appearFromBottom 1s ease-in-out;
+}
 
 @media only screen and (max-width: 1200px) {
+    #scroll-down-suggestion{
+        display: none;
+    }
+    .inner-div-div{
+        animation: none;
+    }
     .inner-div{
         flex-direction: column;
         margin-top: 100px;
@@ -155,6 +241,12 @@
     }
 }
 @media screen and (max-width: 830px){
+    #scroll-down-suggestion{
+        display: none;
+    }
+    .inner-div-div{
+        animation: none;
+    }
     .master-div{
         flex-direction: column;
         gap: 50px;
@@ -174,6 +266,12 @@
  
   
 @media only screen and (max-width: 800px) {
+    #scroll-down-suggestion{
+        display: none;
+    }
+    .inner-div-div{
+        animation: none;
+    }
     .inner-div{
         flex-direction: column;
         margin-top: 100px;
@@ -193,10 +291,22 @@
     .event-table th a{
         padding: 0px;
     }
+    .event-card{
+        width: 80%;
+    }
 
 }
 
 @media only screen and (max-width: 600px){
+    #scroll-down-suggestion{
+        display: none;
+    }
+    .inner-div-div{
+        animation: none;
+    }
+    .event-logo{
+        width: 50%;
+    }
     .inner-div{
         flex-direction: column;
         margin-top: 100px;
@@ -215,5 +325,8 @@
     }
     .event-table th a{
         padding: 0px;
+    }
+    .event-card{
+        width: 70%;
     }
 }

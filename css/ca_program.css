@@ -7,7 +7,7 @@
     top: 0;
     left: 0;
     z-index: -1;
-    filter: brightness(25%);
+    filter: brightness(60%);
     object-fit: contain;
 }
 .ca-heading {
@@ -65,8 +65,8 @@
         z-index: -1;
         object-fit: contain;
         border-radius: 8px;
-        filter: brightness(25%);
-        margin-top: 5vh;
+        filter: brightness(60%);
+        margin-top: 8vh;
     }
     .ca-heading {
         font-size: 45px;
