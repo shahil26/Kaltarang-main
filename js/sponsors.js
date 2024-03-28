@@ -1,6 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 
-const columns = ["#column1", "#column2", "#column3", "#column4", "#column5", "#column6", "#column7"];
+const columns = ["#column1", "#column2", "#column3", "#column4", "#column5", "#column6", "#column7", "#newcolumn1"];
 
 columns.forEach((column, index) => {
     const direction = index % 2 === 1 ? -1 : 1;
