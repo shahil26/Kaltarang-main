@@ -3,11 +3,70 @@ html{
 }
 body{
     background: linear-gradient(to bottom, #280c3c 0%, #390256 100%);
-    overflow-x: hidden;
-    background: radial-gradient(circle, transparent 20%, #1e0036 20%, #1e0036 80%, transparent 80%, transparent) 0% 0% / 64px 64px, radial-gradient(circle, transparent 20%, #1e0036 20%, #1e0036 80%, transparent 80%, transparent) 32px 32px / 64px 64px, linear-gradient(#FF00F3 0.5px, transparent 0.5px) 0px -0.25px / 32px 32px, linear-gradient(90deg, #FF00F3 0.5px, #1e0036 0.5px) -0.25px 0px / 32px 32px #1e0036;
-	background-size: 64px 64px, 64px 64px, 32px 32px, 32px 32px;
+overflow-x: hidden;
+background: radial-gradient(circle, transparent 20%, rgba(30, 0, 54, 0.5) 20%, rgba(30, 0, 54, 0.5) 80%, transparent 80%, transparent) 0% 0% / 64px 64px, radial-gradient(circle, transparent 20%, rgba(30, 0, 54, 0.5) 20%, rgba(30, 0, 54, 0.5) 80%, transparent 80%, transparent) 32px 32px / 64px 64px, linear-gradient(rgba(255, 0, 243, 0.5) 0.5px, transparent 0.5px) 0px -0.25px / 32px 32px, linear-gradient(90deg, rgba(255, 0, 243, 0.5) 0.5px, rgba(30, 0, 54, 0.5) 0.5px) -0.25px 0px / 32px 32px rgba(30, 0, 54, 0.5);
+background-size: 64px 64px, 64px 64px, 32px 32px, 32px 32px;
+
 	background-color: #1e0036;
 }
+.sponser-title{
+    text-align: center;
+    font-size: 60px;
+    margin: 150px 0 40px 0;
+    color: #ecc46c;
+}
+.current-sponsers-container{
+    display: flex;
+    flex-direction: column;
+}
+.current-sponsers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.current-sponsers-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.current-sponsers-title{
+    font-size: 30px;
+    color: #ecc46c;
+    text-align: center;
+    margin: 20px 0;
+    font-weight: bold;
+}
+.current-sponsers-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 150px;
+    padding: 20px;
+    border: 4px solid #ecc46c;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.current-sponsers-logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.current-sponsers-logo:hover{
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
+}
+.current-sponsers-logo img:hover{
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+}
+
 .sponsors {
     text-align: center;
     font-size: 60px;
@@ -54,6 +113,13 @@ body{
 
 
 @media screen and (max-width: 1000px) {
+    .sponser-title {
+        font-size: 60px;
+    }
+    .current-sponsers {
+        flex-direction: column;
+        align-items: center;
+    }
     .sponsors {
         font-size: 60px;
     }
@@ -67,6 +133,7 @@ body{
         align-items: center;
     }
     .card {
+        max-width: 300px;
         width: 80%;
     }
 }
