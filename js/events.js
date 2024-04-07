@@ -30,6 +30,10 @@ function showEvents(element){
     }
 }
 
+function showAlert(id){
+    alert(id + '.pdf is downloaded');    
+}
+
 function downloadFile(id) {
     var link = document.createElement('a');
 
@@ -42,6 +46,8 @@ function downloadFile(id) {
     link.click();
 
     document.body.removeChild(link);
+
+    showAlert(id);
 }
 
 gsap.registerPlugin(ScrollTrigger);
