@@ -30,7 +30,7 @@ function showEvents(element){
 }
 
 function showAlert(id){
-    alert(id + '.pdf is downloaded');    
+    alert(id + '.pdf is being downloaded. Kindly check your downloads folder if the file does not open right away.');    
 }
 
 function downloadFile(id) {
