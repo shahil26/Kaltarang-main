@@ -5,7 +5,6 @@ function getHandleClass(className){
     return document.querySelector('.' + className)
 }
 function getEvents(list, value) {
-    // console.log(list.length, , list[1])
     for (let i = 1; i < list.length; i++) {
         getHandle(list[i].id).style.display = 'none';
     }
@@ -73,7 +72,18 @@ columns.forEach((column) => {
     });
 });
 
+function showSchedule(element, value){
+    for (let i=0; i<element.length; i++) {
+        getHandle(element[i].id).style.display = 'none';
+    }
+    if (value === 'nill') return;
+    getHandle(value).style.display = 'block';
+}
+
 
 
 const selectHandle = getHandle('event-type')
 selectHandle.addEventListener('change', event => getEvents(event.target.parentNode.children,  event.target.value))
+
+const selectHandleSchedule = getHandle('select-schedule')
+selectHandleSchedule.addEventListener('change', event => showSchedule(event.target.parentNode.parentNode.children[1].children,  event.target.value))
