@@ -83,12 +83,22 @@
                     </table>
                 </div>
                 <div id="pro-night" style="display: none;" class="pro-night-div">
-                    To be revealed soon...
+                    <div class="artist-div-wrapper">
+                        <div class="artist-div">
+                            <img src="img/rajat.png" alt="" class="artist-img">
+                        </div>
+                        <div class="artist-div">
+                            <img src="img/lostfireflies.png" alt="" class="artist-img">
+                        </div>
+                        <div class="artist-div">
+                            <img src="img/tracer.png" alt="" class="artist-img">
+                        </div>
+                        <div class="artist-div">
+                            <img src="img/ravator.png" alt="" class="artist-img">
+                        </div>
+                    </div>
                 </div>
                 <div id="competitions" style="display: none;">
-                    <!-- <div style="text-align: center;width: 100%;color: red;margin-top: 20px;font-size: 16px;">
-                        * You are viewing a dynamically updateable webpage, links may not work, Events, Competitions and Rules mentioned on this page are subject to change. Please keep visiting this page for the latest updates or contact us for more information and offline registration.
-                    </div> -->
                     <select name="event-type" id="event-type" class="event-type-select">
                         <option value="nill">Choose an event type</option>
                         <option value="Khayaal">Khayaal (Music)</option>
@@ -469,7 +479,201 @@
                     </div>
                 </div>
                 <div id="timeline" style="display: none;" class="timeline-div">
-                    To be announced soon...
+                    <div class="timeline-wrapper">
+                        <div class="select-schedule-div">
+                            <select name="select-schedule" id="select-schedule" class="event-type-select">
+                                <option value="nill">Choose a Day</option>
+                                <option value="day-1">Day 1</option>
+                                <option value="day-2">Day 2</option>
+                                <option value="day-3">Day 3</option>
+                            </select>
+                        </div>
+                        <div>
+                            <table id="day-1" style="display: none;">
+                                <tr>
+                                    <th>DAY</th>
+                                    <th>EVENT</th>
+                                    <th>TIMING</th>
+                                    <th>VENUE</th>
+                                </tr>
+                                <tr>
+                                    <td rowspan="8">Day 1</td>
+                                    <td>Sangeet Saarang(Solo Singing)-I</td>
+                                    <td>9 am - 10.30 am</td>
+                                    <td>Vivekananda Sabhagar</td>
+                                </tr>
+                                <tr>
+                                    <td>Palette Pantomime(Live Painting)</td>
+                                    <td>11.30 am - 4.30 pm</td>
+                                    <td>AB1-LR1</td>
+                                </tr>
+                                <tr>
+                                    <td>Groove Fusion(Street Dance)-I&amp;II</td>
+                                    <td>11 am - 1 pm</td>
+                                    <td>Plaza Building</td>
+                                </tr>
+                                <tr>
+                                    <td>Spit Bars(Rap)-I</td>
+                                    <td>1.30 pm - 3.30 pm</td>
+                                    <td>Plaza Building</td>
+                                </tr>
+                                <tr>
+                                    <td>Eka-Kalaa(Solo Dance)-I</td>
+                                    <td>1.30 pm - 3.00 pm</td>
+                                    <td>Vivekananda Sabhagar</td>
+                                </tr>
+                                <tr>
+                                    <td>Spit Bars(Rap)-II</td>
+                                    <td>3.30 pm - 4.30 pm</td>
+                                    <td>Vivekananda Sabhagar</td>
+                                </tr>
+                                <tr>
+                                    <td>Opening Ceremony</td>
+                                    <td>4.55 pm - 6.05 pm</td>
+                                    <td>Cricket Ground Stage</td>
+                                </tr>
+                                <tr>
+                                    <td>Comedy Night</td>
+                                    <td>8 pm</td>
+                                    <td>Cricket Ground Stage</td>
+                                </tr>
+                            </table>
+                            <table id="day-2" style="display: none;">
+                                <!-- Day 2 Events -->
+                                <tr>
+                                    <th>DAY</th>
+                                    <th>EVENT</th>
+                                    <th>TIMING</th>
+                                    <th>VENUE</th>
+                                </tr>
+                                <tr>
+                                    <td rowspan="12">Day 2</td>
+                                    <td>Sangeet Saarang(Solo Singing)-II</td>
+                                    <td>9.00 am - 10.30 am</td>
+                                    <td>Cricket Ground Stage</td>
+                                </tr>
+                                <tr>
+                                    <td>Natya Sankalp(Nukkad Natak)</td>
+                                    <td>10.00 am - 2.00 pm</td>
+                                    <td>Plaza Building</td>
+                                </tr>
+                                <tr>
+                                    <td>Sur Sangam(Group Music)</td>
+                                    <td>11.00 am - 12.30 am</td>
+                                    <td>Cricket Ground Stage</td>
+                                </tr>
+                                <tr>
+                                    <td>Nritya Manch(Classical Dance)</td>
+                                    <td>1.00 pm - 2.30 pm</td>
+                                    <td>Vivekananda Sabhagar</td>
+                                </tr>
+                                <tr>
+                                    <td>Ensemble Elysium(Fashion Show)-Practice</td>
+                                    <td>1.30 pm - 3.00 pm</td>
+                                    <td>Cricket Ground Stage</td>
+                                </tr>
+                                <tr>
+                                    <td>Jugalbandi(Duet Dance)-I</td>
+                                    <td>3.30 pm - 5.00 pm</td>
+                                    <td>Vivekananda Sabhagar</td>
+                                </tr>
+                                <tr>
+                                    <td>Sur Saagar(Classical Singing)</td>
+                                    <td>3.00 pm - 4.30 pm</td>
+                                    <td>Cricket Ground Stage</td>
+                                </tr>
+                                <tr>
+                                    <td>Awadh Alankaar(Poetry)</td>
+                                    <td>3.30 pm - 5.30 pm</td>
+                                    <td>Plaza Building</td>
+                                </tr>
+                                <tr>
+                                    <td>Vaadya Vrinda(Instrumental)</td>
+                                    <td>5.30 pm - 7.00 pm</td>
+                                    <td>Vivekananda Sabhagar</td>
+                                </tr>
+                                <tr>
+                                    <td>Ensemble Elysium(Fashion Show)-I</td>
+                                    <td>5.00 pm - 7.00 pm</td>
+                                    <td>Cricket Ground Stage</td>
+                                </tr>
+                                <tr>
+                                    <td>Soundcheck for Concert</td>
+                                    <td>7.00 pm - 8.00 pm</td>
+                                    <td>Cricket Ground Stage</td>
+                                </tr>
+                                <tr>
+                                    <td>Music Concert</td>
+                                    <td>8.00 pm</td>
+                                    <td>Cricket Ground Stage</td>
+                                </tr>
+                            </table>
+                            <table id="day-3" style="display: none;">
+                                <!-- Day 3 Events -->
+                                <tr>
+                                    <th>DAY</th>
+                                    <th>EVENT</th>
+                                    <th>TIMING</th>
+                                    <th>VENUE</th>
+                                </tr>
+                                <tr>
+                                    <td rowspan="10">Day 3</td>
+                                    <td>Sync & Soar(Group Dance)-I</td>
+                                    <td>8.00 am - 9.30 am</td>
+                                    <td>Cricket Ground Stage</td>
+                                </tr>
+                                <tr>
+                                    <td>Kalpanaa-Kaarvan(Stageplay)</td>
+                                    <td>8.00 am - 12.00 pm</td>
+                                    <td>Vivekananda Sabhagar</td>
+                                </tr>
+                                <tr>
+                                    <td>Eka-Kalaa(Solo Dance)-II</td>
+                                    <td>12.30 pm - 1.30 pm</td>
+                                    <td>Vivekananda Sabhagar</td>
+                                </tr>
+                                <tr>
+                                    <td>Open Mic for Faculty</td>
+                                    <td>2.00 pm - 3.00 pm</td>
+                                    <td>Vivekananda Sabhagar</td>
+                                </tr>
+                                <tr>
+                                    <td>Vichar-Vivaad(Debate)-I &amp; II</td>
+                                    <td>10.00 am - 3.30 pm</td>
+                                    <td>AB1-LR1</td>
+                                </tr>
+                                <tr>
+                                    <td>Jugalbandi(Duet Dance)-II</td>
+                                    <td>10.00 am - 11.30 am</td>
+                                    <td>Cricket Ground Stage</td>
+                                </tr>
+                                <tr>
+                                    <td>Sync & Soar(Group Dance)-II</td>
+                                    <td>12.00 pm - 1.00 pm</td>
+                                    <td>Cricket Ground Stage</td>
+                                </tr>
+                                <tr>
+                                    <td>Ensemble Elysium(Fashion Show)-II</td>
+                                    <td>2.00 pm - 4.30 pm</td>
+                                    <td>Cricket Ground Stage</td>
+                                </tr>
+                                <tr>
+                                    <td>Closing Ceremony and Prize Distribution</td>
+                                    <td>5.30 pm - 7.00 pm</td>
+                                    <td>Cricket Ground Stage</td>
+                                </tr>
+                                <tr>
+                                    <td>EDM Night</td>
+                                    <td>8.00 pm</td>
+                                    <td>Cricket Ground Stage</td>
+                                </tr>
+                                <!-- Additional events can be added here -->
+                            </table>
+                        </div>
+                        <div class="download-schedule">
+                            <a class="schedule-button" onclick="downloadFile('Schedule')">DOWNLOAD COMPILED SCHEDULE</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
